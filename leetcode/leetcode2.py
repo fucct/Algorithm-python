@@ -1,4 +1,4 @@
-from leetcode21 import ListNode
+from leetcode.leetcode21 import ListNode
 
 
 class Solution2:
