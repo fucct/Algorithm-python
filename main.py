@@ -1,7 +1,14 @@
-def print_hi(name):
-    print(f'Hi, {name}')
+from typing import List
 
 
-if __name__ == '__main__':
-    print_hi({"a": "abc", "b": "bbc"})
-
+class Solution:
+    @staticmethod
+    def twoSum(nums: List[int], target: int) -> List[int]:
+        for num in nums:
+            last = target - num
+            try:
+                firstNumIdx = nums.index(num)
+                lastNumIdx = nums[firstNumIdx + 1:].index(last) + firstNumIdx + 1
+                return [firstNumIdx, lastNumIdx]
+            except:
+                continue
