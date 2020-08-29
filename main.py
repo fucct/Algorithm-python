@@ -1,4 +1,4 @@
-import leetcode7
+from leetcode9 import Solution9
 
-sol = leetcode7.Solution7()
-print(sol.reverse(1534236469))
+sol = Solution9()
+print(sol.isPalindrome(121))
