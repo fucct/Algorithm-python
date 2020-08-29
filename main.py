@@ -1,4 +1,5 @@
 from leetcode.leetcode35 import Solution35
+from leetcode.leetcode53 import Solution53
 
-sol = Solution35()
-print(sol.searchInsert([1,3,5,6], 7))
+sol = Solution53()
+print(sol.maxSubArray([-1, -2, -3]))
