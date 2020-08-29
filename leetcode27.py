@@ -1,16 +1,14 @@
 from typing import List
 
 
-class Solution26:
-    def removeDuplicates(self, nums: List[int]) -> int:
+class Solution27:
+    def removeElement(self, nums: List[int], val: int) -> int:
         idx = 0
         length = len(nums)
-        if length == 0:
-            return 0
         while idx != length:
-            if nums.count(nums[idx]) > 1:
+            if nums[idx] == val:
                 del nums[idx]
-                idx -= 1
                 length -= 1
+                continue
             idx += 1
         return len(nums)
