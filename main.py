@@ -7,7 +7,7 @@ from leetcode.leetcode67 import Solution67
 from leetcode.leetcode69 import Solution69
 from leetcode.leetcode70 import Solution70
 from leetcode.leetcode83 import Solution83
+from leetcode.leetcode88 import Solution88
 
-l1 = ListNode(1, ListNode(1, ListNode(2)))
-sol = Solution83()
-sol.deleteDuplicates(l1).print()
+sol = Solution88()
+sol.merge([2, 0], 1, [1], 1)
