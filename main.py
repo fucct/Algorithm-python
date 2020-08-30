@@ -1,5 +1,6 @@
 from leetcode.leetcode35 import Solution35
 from leetcode.leetcode53 import Solution53
+from leetcode.leetcode58 import Solution58
 
-sol = Solution53()
-print(sol.maxSubArray([-1, -2, -3]))
+sol = Solution58()
+print(sol.lengthOfLastWord("a "))
