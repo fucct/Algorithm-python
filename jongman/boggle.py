@@ -1,7 +1,7 @@
 from typing import List
 
 
-class SolutionJongman:
+class SolutionBoggle:
     dx = [-1, -1, -1, 0, 1, 1, 1, 0]
     dy = [1, 0, -1, -1, -1, 0, 1, 1]
     board = [['N', 'N', 'N', 'N', 'N'], ['N', 'E', 'E', 'E', 'N'], ['N', 'E', 'Y', 'E', 'N'], ['N', 'E', 'E', 'E', 'N'],
