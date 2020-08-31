@@ -1,5 +1,6 @@
 from leetcode.leetcode122 import Solution122
+from leetcode.leetcode189 import Solution189
 
-sol = Solution122()
+sol = Solution189()
 
-print(sol.maxProfit([2,7,1,6]))
+sol.rotate([1, 2, 3, 4, 5, 6, 7], 3)
