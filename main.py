@@ -1,6 +1,7 @@
 from leetcode.leetcode122 import Solution122
 from leetcode.leetcode189 import Solution189
+from leetcode.leetcode7 import Solution7
 
-sol = Solution189()
+sol = Solution7()
 
-sol.rotate([1, 2, 3, 4, 5, 6, 7], 3)
+print(sol.reverse(-375398))

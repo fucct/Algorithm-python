@@ -1,34 +1,26 @@
 class Solution7:
     def reverse(self, x: int) -> int:
+        result = 0
+        results = []
+        isMinus = False
         if x == 0:
             return 0
-        string = str(x)
-        split = [char for char in string]
-        if '-' in split:
-            split = split[1:]
-            split.reverse()
-            nonZeroIdx = 0
-            for letter in split:
-                if letter != '0':
-                    break
-                else:
-                    nonZeroIdx += 1
-            split = split[nonZeroIdx:]
-            result = int(''.join(split)) * -1
-            if result < -2**31:
-                return 0
-            return result
-        else:
-            split.reverse()
-            nonZeroIdx = 0
-            for letter in split:
-                if letter != '0':
-                    break
-                else:
-                    nonZeroIdx += 1
-            split = split[nonZeroIdx:]
+        if x < 0:
+            isMinus = True
+        x = abs(x)
+        while x != 0:
+            num = x % 10
+            results.append(num)
+            x //= 10
 
-            result = int(''.join(split))
-            if result > 2**31-1:
-                return 0
-            return result
+        for num in results:
+            result *= 10
+            if result == 0 and num == 0:
+                continue
+            result += num
+        if result > 2 ** 31:
+            return 0
+
+        if isMinus:
+            return -result
+        return result
